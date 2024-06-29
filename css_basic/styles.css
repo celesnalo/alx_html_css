@@ -10,6 +10,7 @@ main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    background-color: black;
 }
 
 header, footer {
@@ -17,19 +18,51 @@ header, footer {
     padding: 20px;
     text-align: center;
 }
+header {
+    background-color: #1b1e1b;
+    color: white;
+    padding: 10px 0;
+}
 
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
 article {
     flex: 2;
     overflow-y: auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ababab;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
+    border: 1px solid black;
 }
 
 body, main {
@@ -41,4 +74,16 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #eee;
+}
+footer{
+    background-color: #1b1e1b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: rgb(0, 172, 252);
 }
