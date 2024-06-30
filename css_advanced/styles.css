@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 1104px;
+    margin: 15px auto;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+}
+
+.links li {
+    padding-left: 50px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    background-image: url('CSS Advanced/Object.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+
+.center h1 {
+    font-size: 5em;
+    color: #ffffff;
+}
+
+.center div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 45vw;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 50px;
+    background-color: #C271FF;
+    width: 200px;
+    height: 44px;
+    border-radius: 22px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px;
+    text-align: center;
+    border: none;
+}
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pros h2 {
+    margin-bottom: 90px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.pros h2 span {
+    color: #C271FF;
+}
+
+.thepros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+
+.thepros div {
+    width: 150px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thepros h3 {
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.thepros p {
+    color: #333333;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.section2 {
+    width: 1440px;
+    height: 392px;
+    background-color: #C271FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 943px;
+    height: 160px;
+    align-items: center;
+}
+
+.quotes div {
+    margin-left: 50px;
+}
+
+.quotes div h3, .quotes div p {
+    margin-bottom: 7px;
+    font-size: 19px;
+    line-height: 33.6px;
+    font-weight: 300;
+    color: #e5e5e5;
+}
+
+.quotes div h3 {
+    color: #ffffff;
+}
+
+.quotes div blockquote {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 33.6px;
+    font-weight: 300;
+    color: #e5e5e5;
+}
+
+.video_list {
+    width: 1228px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+}
+
+.video_list h2 {
+    margin-bottom: 70px;
+    line-height: 40.22px;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.video_list h2 span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.card {
+    width: 255px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.card > p {
+    color: #737373;
+}
+
+.card > img {
+    width: 255px;
+    height: 154px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    color: #C271FF;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+    color: #C271FF;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 502px;
+    background-color: #071629;
+    color: #ffffff;
+    line-height: 40.22px;
+}
+
+.memberships {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0 30px;
+}
+
+.membership_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 257px;
+    height: 153px;
+    text-align: center;
+}
+
+.membership h2 span {
+    color: #C271FF;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 920px;
+    height: 707px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 60px;
+    line-height: 75.42px;
+    font-weight: 300;
+    color: #071629;
+    text-align: center;
+}
+
+.faq_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_cards > div {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.paragraphs div {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #071629;
+    width: 1440px;
+    height: 249px;
+}
+
+footer > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ffffff;
+    width: 1440px;
+    height: 249px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #737373;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1440px;
+    margin-top: 20px;
+}
+
+.contact_icons {
+    width: 130px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
