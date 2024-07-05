@@ -6,9 +6,9 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,6 +37,7 @@ nav {
 .links li a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 .banner {
@@ -55,6 +56,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     height: 100px;
 }
 
@@ -63,13 +65,13 @@ nav {
     color: #ffffff;
 }
 
-.center div {
+.center span {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 45vw;
     color: #ffffff;
-    margin-top: 10px;
+    margin: 5px 0;
 }
 
 .button {
@@ -80,9 +82,9 @@ nav {
     border-radius: 22px;
     color: #ffffff;
     font-size: 16px;
-    padding: 12px;
-    text-align: center;
     border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
 .pros {
@@ -97,17 +99,14 @@ nav {
     margin-bottom: 90px;
     margin-top: 20px;
     color: #000000;
-}
-
-.pros h2 span {
-    color: #C271FF;
+    font-size: 2em;
 }
 
 .thepros {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     width: 90vw;
+    text-align: center;
 }
 
 .thepros div {
@@ -122,7 +121,6 @@ nav {
 .thepros h3 {
     color: black;
     margin-top: 10px;
-    text-align: center;
     font-size: 1em;
 }
 
@@ -134,79 +132,62 @@ nav {
 }
 
 .section2 {
-    width: 1440px;
+    width: 100%;
     height: 392px;
     background-color: #C271FF;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.quotes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 943px;
-    height: 160px;
-    align-items: center;
-}
-
-.quotes div {
-    margin-left: 50px;
-}
-
-.quotes div h3, .quotes div p {
-    margin-bottom: 7px;
-    font-size: 19px;
-    line-height: 33.6px;
-    font-weight: 300;
     color: #e5e5e5;
+    text-align: center;
 }
 
-.quotes div h3 {
-    color: #ffffff;
+.section2 img {
+    width: 100%;
+    height: auto;
 }
 
-.quotes div blockquote {
-    margin-bottom: 30px;
+.section2 blockquote {
     font-size: 22px;
     line-height: 33.6px;
     font-weight: 300;
-    color: #e5e5e5;
+}
+
+.section2 h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 
 .video_list {
-    width: 1228px;
-    height: 450px;
+    width: 100%;
+    max-width: 1228px;
+    margin: 70px auto;
+    text-align: center;
+    align-items: center;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 70px auto;
 }
 
 .video_list h2 {
     margin-bottom: 70px;
-    line-height: 40.22px;
     font-size: 32px;
     font-weight: 300;
     text-align: center;
+    line-height: 40.22px;
 }
 
-.video_list h2 span {
-    color: #C271FF;
-    font-weight: bold;
-}
-
-.list {
+.video_list .list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.card {
+.video_list .card {
     width: 255px;
     height: 335px;
     display: flex;
@@ -214,43 +195,44 @@ nav {
     justify-content: space-between;
     align-items: start;
     padding: 10px;
-    margin-left: 25px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: left;
 }
 
-.card > p {
-    color: #737373;
-}
-
-.card > img {
-    width: 255px;
-    height: 154px;
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.card h4 {
-    color: #C271FF;
+.card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-.rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 255px;
-    color: #C271FF;
+.card p {
+    color: #737373;
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
-.icon {
+.icon, .rating {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .icon img {
     width: 25px;
     height: 25px;
-    margin-right: 15px;
+}
+
+.rating i {
+    color: #C271FF;
 }
 
 .membership {
@@ -258,106 +240,104 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1440px;
-    height: 502px;
+    width: 100%;
     background-color: #071629;
     color: #ffffff;
-    line-height: 40.22px;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 2em;
+    margin-bottom: 70px;
 }
 
 .memberships {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 70px 0 30px;
+    gap: 20px;
 }
 
 .membership_card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 257px;
     height: 153px;
     text-align: center;
+    background: #fff;
+    color: #071629;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.membership h2 span {
-    color: #C271FF;
+.membership_card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 .faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 920px;
-    height: 707px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 920px;
+    margin: 70px auto;
+    text-align: center;
 }
 
 .faq h2 {
-    font-size: 60px;
-    line-height: 75.42px;
-    font-weight: 300;
-    color: #071629;
-    text-align: center;
+    font-size: 2em;
+    margin-bottom: 70px;
 }
 
 .faq_cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .faq_cards > div {
-    margin-left: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.paragraphs div {
-    margin-top: 30px;
+.faq_cards h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #071629;
-    width: 1440px;
-    height: 249px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
 }
 
-footer > section {
+footer .contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+}
+
+.contact_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.contact_icons i {
     color: #ffffff;
-    width: 1440px;
-    height: 249px;
+    font-size: 1.5em;
 }
 
 footer p {
     font-size: 12px;
     color: #737373;
-}
-
-.contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1440px;
-    margin-top: 20px;
-}
-
-.contact_icons {
-    width: 130px;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
