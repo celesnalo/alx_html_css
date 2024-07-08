@@ -1,0 +1,129 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #fff;
+    --hover-color: #f00;
+    --font-size: 14px;
+    --button-color: #f00;
+    --button-hover-opacity: 0.9;
+    --button-radius: 5px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.logo {
+    font-size: 1.5em;
+    width: 161px;
+    height: 32px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: var(--font-size);
+}
+
+.nav-links a:hover {
+    color: var(--hover-color);
+}
+
+.home {
+    background: url('assets/images/background.png') no-repeat center center/cover;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FF6565;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    width: 162px;
+    height: 44px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    opacity: var(--button-hover-opacity);
+}
+
+.what-we-do, .our-results, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.what-we-do h2, .our-results h2, .contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.services, .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service, .result {
+    flex: 1 1 calc(25% - 40px);
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service img, .result span {
+    display: block;
+    margin: 0 auto 10px;
+}
